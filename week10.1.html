@@ -1,0 +1,19 @@
+<script>
+function findSign() {
+    let a = parseInt(prompt("Enter first number"));
+    let b = parseInt(prompt("Enter second number"));
+    let c = parseInt(prompt("Enter third number"));
+
+    let product = a * b * c;
+
+    if (product > 0) {
+        alert("The sign is Positive (+)");
+    } else if (product < 0) {
+        alert("The sign is Negative (-)");
+    } else {
+        alert("The product is Zero");
+    }
+}
+</script>
+
+<button onclick="findSign()">Check Sign</button>

@@ -1,0 +1,17 @@
+<script>
+function sortNumbers() {
+    let a = parseInt(prompt("Enter first number"));
+    let b = parseInt(prompt("Enter second number"));
+    let c = parseInt(prompt("Enter third number"));
+
+    let temp;
+
+    if (a > b) { temp = a; a = b; b = temp; }
+    if (a > c) { temp = a; a = c; c = temp; }
+    if (b > c) { temp = b; b = c; c = temp; }
+
+    alert("Sorted order: " + a + ", " + b + ", " + c);
+}
+</script>
+
+<button onclick="sortNumbers()">Sort Numbers</button>

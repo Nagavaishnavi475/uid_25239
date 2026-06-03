@@ -1,0 +1,26 @@
+<input type="number" id="n1" placeholder="Enter number 1">
+<input type="number" id="n2" placeholder="Enter number 2">
+<input type="number" id="n3" placeholder="Enter number 3">
+<input type="number" id="n4" placeholder="Enter number 4">
+<input type="number" id="n5" placeholder="Enter number 5">
+
+<button onclick="findLargest()">Find Largest</button>
+
+<script>
+function findLargest() {
+    let a = parseInt(document.getElementById("n1").value);
+    let b = parseInt(document.getElementById("n2").value);
+    let c = parseInt(document.getElementById("n3").value);
+    let d = parseInt(document.getElementById("n4").value);
+    let e = parseInt(document.getElementById("n5").value);
+
+    let largest = a;
+
+    if (b > largest) largest = b;
+    if (c > largest) largest = c;
+    if (d > largest) largest = d;
+    if (e > largest) largest = e;
+
+    alert("Largest number is: " + largest);
+}
+</script>

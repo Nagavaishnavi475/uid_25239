@@ -1,0 +1,17 @@
+<script>
+function checkEvenOddLoop() {
+    let result = "";
+
+    for (let i = 0; i <= 15; i++) {
+        if (i % 2 === 0) {
+            result += i + " is Even\n";
+        } else {
+            result += i + " is Odd\n";
+        }
+    }
+
+    alert(result);
+}
+</script>
+
+<button onclick="checkEvenOddLoop()">Check 0–15</button>

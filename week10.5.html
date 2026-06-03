@@ -1,0 +1,23 @@
+<script>
+function calculateGrade() {
+    let total = 0;
+
+    for (let i = 1; i <= 6; i++) {
+        let marks = parseInt(prompt("Enter marks for subject " + i));
+        total += marks;
+    }
+
+    let avg = total / 6;
+    let grade;
+
+    if (avg >= 90) grade = "A";
+    else if (avg >= 75) grade = "B";
+    else if (avg >= 60) grade = "C";
+    else if (avg >= 50) grade = "D";
+    else grade = "Fail";
+
+    alert("Average Marks: " + avg + "\nGrade: " + grade);
+}
+</script>
+
+<button onclick="calculateGrade()">Calculate Grade</button>
